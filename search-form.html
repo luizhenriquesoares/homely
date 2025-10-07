@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FifthFloor - Search Form (QuintoAndar Style)</title>
+    <link rel="stylesheet" href="search-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero-section">
+        <div class="container">
+            <!-- FormBox Component -->
+            <div class="FormBox">
+                <!-- Segmented Control -->
+                <div class="SegmentedWrapper">
+                    <div class="SegmentedControl" role="tablist" tabindex="0">
+                        <div class="SegmentedIndicator"></div>
+                        <button class="SegmentButton SegmentButton--active" type="button" role="tab"
+                                aria-label="Search Properties" aria-selected="true" data-segment="search">
+                            <span class="Typography">Search Properties</span>
+                        </button>
+                        <button class="SegmentButton" type="button" role="tab"
+                                aria-label="List Property" aria-selected="false" data-segment="list">
+                            <span class="Typography">List Property</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Content Area -->
+                <div class="SegmentedContent">
+                    <h1 class="HeroTitle">Rent a home<br>you'll love</h1>
+
+                    <!-- Content Tabs (Rent/Buy) -->
+                    <div class="ContentTabs">
+                        <ul role="tablist" class="Tabs">
+                            <li aria-selected="true" role="tab" tabindex="0"
+                                class="Tab Tab--active" data-action="rent">
+                                <p class="TabLabel">Rent</p>
+                            </li>
+                            <li aria-selected="false" role="tab" tabindex="0"
+                                class="Tab" data-action="buy">
+                                <p class="TabLabel">Buy</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Search Form -->
+                    <form id="searchForm">
+                        <!-- City Input -->
+                        <div class="FieldWrapper">
+                            <svg class="FieldIcon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill="currentColor" fill-rule="evenodd" d="M12 5.25c-2.4853 0-4.5 2.0147-4.5 4.5s2.0147 4.5 4.5 4.5 4.5-2.0147 4.5-4.5-2.0147-4.5-4.5-4.5zm-3 4.5c0-1.6569 1.3432-3 3-3 1.6569 0 3 1.3431 3 3s-1.3431 3-3 3c-1.6568 0-3-1.3431-3-3z" clip-rule="evenodd"></path>
+                                <path fill="currentColor" fill-rule="evenodd" d="M17.0313 3.2208c-2.9659-2.2944-7.0967-2.2944-10.0625 0C3.2903 6.0662 2.6712 11.398 5.5959 15.018L12 22.9433l6.4041-7.9254c2.9247-3.62 2.3057-8.9517-1.3728-11.797zm-.9179 1.1864c-2.4253-1.8763-5.8014-1.8763-8.2268 0-3.012 2.3298-3.5214 6.7006-1.124 9.668L12 20.5567l5.2374-6.4815c2.3974-2.9673 1.888-7.3382-1.124-9.668z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div class="Field">
+                                <label class="FieldLabel">
+                                    <p class="FieldLabelText">City</p>
+                                </label>
+                                <div class="InputWrapper">
+                                    <input autocomplete="off" id="cityInput" name="city-input"
+                                           placeholder="Search by city" type="text" role="combobox"
+                                           aria-expanded="false" aria-haspopup="true" class="Input" value="">
+                                    <div class="Dropdown Dropdown--closed" id="cityDropdown">
+                                        <ul class="DropdownList" role="listbox"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Neighborhood Input -->
+                        <div class="FieldWrapper">
+                            <svg class="FieldIcon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill="currentColor" fill-rule="evenodd" d="M1.7655 11.5832l.9689 1.1451 1.7655-1.4939V22.5h15V11.1444l1.7938 1.5005.9624-1.1505-10.2508-8.575-10.2398 8.6638zM5.9999 21V9.9653l6.0109-5.0858 5.9891 5.0101V21h-2.25v-9.75h-7.5V21H6zm3.75 0h4.5v-8.25h-4.5V21z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div class="Field">
+                                <label class="FieldLabel">
+                                    <p class="FieldLabelText">Neighborhood</p>
+                                </label>
+                                <div class="InputWrapper">
+                                    <input autocomplete="off" id="neighborhoodInput" name="neighborhood-input"
+                                           placeholder="Search by neighborhood" type="text" role="combobox"
+                                           aria-expanded="false" aria-haspopup="true" class="Input" value="">
+                                    <div class="Dropdown Dropdown--closed" id="neighborhoodDropdown">
+                                        <ul class="DropdownList" role="listbox"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Selectors Row -->
+                        <div class="SelectorsWrapper">
+                            <!-- Price Selector -->
+                            <div class="FieldWrapper FieldWrapper--selector">
+                                <div class="SelectorInner">
+                                    <svg class="FieldIcon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path fill="currentColor" fill-rule="evenodd" d="M12 9c-1.6569 0-3 1.3431-3 3s1.3431 3 3 3 3-1.3431 3-3-1.3431-3-3-3zm-1.5 3c0-.8284.6716-1.5 1.5-1.5s1.5.6716 1.5 1.5-.6716 1.5-1.5 1.5-1.5-.6716-1.5-1.5z" clip-rule="evenodd"></path>
+                                        <path fill="currentColor" d="M19.5 12c0 .8284-.6716 1.5-1.5 1.5s-1.5-.6716-1.5-1.5.6716-1.5 1.5-1.5 1.5.6716 1.5 1.5zM6 13.5c.8284 0 1.5-.6716 1.5-1.5s-.6716-1.5-1.5-1.5-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5z"></path>
+                                        <path fill="currentColor" fill-rule="evenodd" d="M1.5 18.75V5.25h21v13.5h-21zm1.5-12v10.5h18V6.75H3z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <div class="Field">
+                                        <label class="FieldLabel">
+                                            <p class="FieldLabelText">Total price up to</p>
+                                        </label>
+                                        <div class="CustomSelect" tabindex="0" role="combobox"
+                                             aria-expanded="false" data-testid="price-selector" id="priceSelector">
+                                            <span class="CustomSelectValue">Choose price</span>
+                                        </div>
+                                        <ul role="listbox" class="CustomSelectOptions CustomSelectOptions--closed"
+                                            id="priceOptions">
+                                            <li role="option" aria-selected="false" data-value="">Choose price</li>
+                                            <li role="option" aria-selected="false" data-value="500">€ 500</li>
+                                            <li role="option" aria-selected="false" data-value="1000">€ 1,000</li>
+                                            <li role="option" aria-selected="false" data-value="1500">€ 1,500</li>
+                                            <li role="option" aria-selected="false" data-value="2000">€ 2,000</li>
+                                            <li role="option" aria-selected="false" data-value="3000">€ 3,000</li>
+                                            <li role="option" aria-selected="false" data-value="4000">€ 4,000</li>
+                                            <li role="option" aria-selected="false" data-value="5000">€ 5,000</li>
+                                        </ul>
+                                    </div>
+                                    <svg class="ChevronDown" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path fill="currentColor" d="M4.7197 9.6507l7.2804 7.2803 7.2803-7.2803L18.2197 8.59l-6.2196 6.2197L5.7804 8.59 4.7197 9.6507z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Bedrooms Selector -->
+                            <div class="FieldWrapper FieldWrapper--selector">
+                                <div class="SelectorInner">
+                                    <svg class="FieldIcon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path fill="currentColor" fill-rule="evenodd" d="M1.5 4.5H3v9h8.25V6.75H22.5V19.5H21V15H3v4.125H1.5V4.5zm19.5 9h-8.25V8.25H21v5.25z" clip-rule="evenodd"></path>
+                                        <path fill="currentColor" fill-rule="evenodd" d="M7.125 6.75C5.6753 6.75 4.5 7.9253 4.5 9.375S5.6753 12 7.125 12 9.75 10.8247 9.75 9.375 8.5747 6.75 7.125 6.75zM6 9.375c0-.6213.5037-1.125 1.125-1.125s1.125.5037 1.125 1.125S7.7463 10.5 7.125 10.5 6 9.9963 6 9.375z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <div class="Field">
+                                        <label class="FieldLabel">
+                                            <p class="FieldLabelText">Bedrooms</p>
+                                        </label>
+                                        <div class="CustomSelect" tabindex="0" role="combobox"
+                                             aria-expanded="false" data-testid="rooms-selector" id="roomsSelector">
+                                            <span class="CustomSelectValue">Number of bedrooms</span>
+                                        </div>
+                                        <ul role="listbox" class="CustomSelectOptions CustomSelectOptions--closed"
+                                            id="roomsOptions">
+                                            <li role="option" aria-selected="false" data-value="">Number of bedrooms</li>
+                                            <li role="option" aria-selected="false" data-value="1">1+</li>
+                                            <li role="option" aria-selected="false" data-value="2">2+</li>
+                                            <li role="option" aria-selected="false" data-value="3">3+</li>
+                                            <li role="option" aria-selected="false" data-value="4">4+</li>
+                                        </ul>
+                                    </div>
+                                    <svg class="ChevronDown" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path fill="currentColor" d="M4.7197 9.6507l7.2804 7.2803 7.2803-7.2803L18.2197 8.59l-6.2196 6.2197L5.7804 8.59 4.7197 9.6507z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="ButtonPrimary" data-testid="search-button">
+                            Search properties
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="search-form.js"></script>
+</body>
+</html>
