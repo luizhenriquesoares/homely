@@ -6,18 +6,18 @@
 }
 
 :root {
-    --primary: #6366f1;
-    --primary-dark: #4f46e5;
-    --primary-light: #818cf8;
-    --secondary: #ec4899;
-    --accent: #8b5cf6;
+    --primary: #1e3a8a;
+    --primary-dark: #1e40af;
+    --primary-light: #3b82f6;
+    --secondary: #dc2626;
+    --accent: #475569;
     --text-dark: #0f172a;
     --text-medium: #475569;
     --text-light: #64748b;
     --bg-white: #ffffff;
-    --bg-light: #f8fafc;
-    --bg-gray: #f1f5f9;
-    --border: #e2e8f0;
+    --bg-light: #f1f5f9;
+    --bg-gray: #e2e8f0;
+    --border: #cbd5e1;
 
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
@@ -25,9 +25,9 @@
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
     --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 
-    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-    --gradient-secondary: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
-    --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-primary: linear-gradient(135deg, #1e3a8a 0%, #475569 100%);
+    --gradient-secondary: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    --gradient-hero: linear-gradient(135deg, #1e3a8a 0%, #475569 100%);
 }
 
 html {
@@ -183,12 +183,12 @@ body {
 /* Hero Section - QuintoAndar Style */
 .hero {
     position: relative;
-    min-height: 650px;
-    height: 70vh;
+    min-height: 900px;
+    height: auto;
     display: flex;
     align-items: center;
-    overflow: hidden;
-    padding: 80px 0;
+    overflow: visible;
+    padding: 80px 0 150px;
 }
 
 .hero .container {
@@ -196,7 +196,7 @@ body {
     margin-left: 0;
     max-width: none;
     width: 100%;
-    padding-left: 60px;
+    padding-left: 100px;
     padding-right: 24px;
     display: flex;
     justify-content: flex-start;
@@ -209,8 +209,8 @@ body {
     width: 100%;
     height: 100%;
     z-index: 0;
-    background: url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1920&q=80') center/cover;
-    background-position: right center;
+    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80') center/cover;
+    background-position: center center;
 }
 
 .hero-overlay {
@@ -920,7 +920,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #475569 100%);
 }
 
 .cta-shapes {
@@ -1361,6 +1361,7 @@ section {
         padding: 16px;
         max-width: 546px;
         height: auto;
+        min-height: 700px;
     }
 }
 
@@ -1422,6 +1423,9 @@ section {
 /* Content Area */
 .SegmentedContent {
     padding: 32px 24px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
 .HeroTitle {
@@ -1491,6 +1495,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 14px;
+    flex: 1;
 }
 
 /* Field Wrapper */
@@ -1688,7 +1693,7 @@ section {
 .ButtonPrimary {
     width: 100%;
     padding: 16px 24px;
-    background: #5a67d8;
+    background: var(--primary);
     color: var(--bg-white);
     border: none;
     border-radius: 12px;
@@ -1696,7 +1701,7 @@ section {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 12px rgba(90, 103, 216, 0.3);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
     min-height: 52px;
     display: flex !important;
     align-items: center;
@@ -1705,9 +1710,9 @@ section {
 }
 
 .ButtonPrimary:hover {
-    background: #4c51bf;
+    background: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(90, 103, 216, 0.4);
+    box-shadow: 0 6px 16px rgba(14, 165, 233, 0.4);
 }
 
 .ButtonPrimary:active {
@@ -1762,7 +1767,7 @@ section {
 
 /* Testimonial Section - Section 2 */
 .testimonial-hero {
-    background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     padding: 80px 0;
     position: relative;
 }
@@ -1809,7 +1814,7 @@ section {
 
 .btn-learn-more {
     padding: 14px 32px;
-    background: #5a67d8;
+    background: var(--primary);
     color: white;
     border: none;
     border-radius: 24px;
@@ -1820,7 +1825,7 @@ section {
 }
 
 .btn-learn-more:hover {
-    background: #4c51bf;
+    background: var(--primary-dark);
     transform: translateY(-2px);
 }
 

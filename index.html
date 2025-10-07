@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homely - Find Your Perfect Home in Malta</title>
     <meta name="description" content="Rent apartments and houses in Malta without complications. No guarantor needed. Digital contracts. Verified properties.">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%236366f1' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='system-ui'%3E5%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%231e3a8a' width='100' height='100' rx='20'/%3E%3Cpath d='M50 20L20 45V80C20 81.3261 20.5268 82.5979 21.4645 83.5355C22.4021 84.4732 23.6739 85 25 85H40V65C40 63.6739 40.5268 62.4021 41.4645 61.4645C42.4021 60.5268 43.6739 60 45 60H55C56.3261 60 57.5979 60.5268 58.5355 61.4645C59.4732 62.4021 60 63.6739 60 65V85H75C76.3261 85 77.5979 84.4732 78.5355 83.5355C79.4732 82.5979 80 81.3261 80 80V45L50 20Z' fill='white'/%3E%3Ccircle cx='50' cy='42.5' r='5' fill='%23dc2626'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,26 +21,17 @@
                         <!-- Background with gradient -->
                         <rect width="40" height="40" rx="10" fill="url(#logoGradient)"/>
 
-                        <!-- Building floors representation -->
-                        <g opacity="0.3">
-                            <line x1="8" y1="30" x2="32" y2="30" stroke="white" stroke-width="1.5"/>
-                            <line x1="8" y1="26" x2="32" y2="26" stroke="white" stroke-width="1.5"/>
-                            <line x1="8" y1="22" x2="32" y2="22" stroke="white" stroke-width="1.5"/>
-                            <line x1="8" y1="18" x2="32" y2="18" stroke="white" stroke-width="1.5"/>
-                        </g>
+                        <!-- House/Home icon -->
+                        <path d="M20 8L8 18V32C8 32.5304 8.21071 33.0391 8.58579 33.4142C8.96086 33.7893 9.46957 34 10 34H16V26C16 25.4696 16.2107 24.9609 16.5858 24.5858C16.9609 24.2107 17.4696 24 18 24H22C22.5304 24 23.0391 24.2107 23.4142 24.5858C23.7893 24.9609 24 25.4696 24 26V34H30C30.5304 34 31.0391 33.7893 31.4142 33.4142C31.7893 33.0391 32 32.5304 32 32V18L20 8Z" fill="white"/>
 
-                        <!-- Number 5 prominent -->
-                        <text x="20" y="28" font-family="Inter, system-ui" font-size="20" font-weight="800"
-                              text-anchor="middle" fill="white">5</text>
-
-                        <!-- Small house icon on top -->
-                        <path d="M20 8L14 12.5V10H12V14L20 8L28 14V10H26V12.5L20 8Z" fill="white" opacity="0.9"/>
+                        <!-- Heart accent on house -->
+                        <circle cx="20" cy="17" r="2" fill="#dc2626" opacity="0.9"/>
 
                         <defs>
                             <linearGradient id="logoGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                <stop offset="0%" stop-color="#6366f1"/>
-                                <stop offset="50%" stop-color="#7c3aed"/>
-                                <stop offset="100%" stop-color="#8b5cf6"/>
+                                <stop offset="0%" stop-color="#1e3a8a"/>
+                                <stop offset="50%" stop-color="#475569"/>
+                                <stop offset="100%" stop-color="#334155"/>
                             </linearGradient>
                         </defs>
                     </svg>
@@ -360,7 +351,7 @@
             </div>
             <div class="cities-grid">
                 <div class="city-card" data-city="sliema">
-                    <div class="city-image" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url('https://images.unsplash.com/photo-1534188753412-5df1a8b12de4?w=800&q=80') center/cover;">
+                    <div class="city-image" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url('https://images.unsplash.com/photo-1590419690008-905895e8fe0d?w=800&q=80') center/cover;">
                         <div class="city-overlay">
                             <h3>Sliema</h3>
                             <p class="city-properties">800+ properties</p>
@@ -369,7 +360,7 @@
                     </div>
                 </div>
                 <div class="city-card" data-city="stjulians">
-                    <div class="city-image" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url('https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=800&q=80') center/cover;">
+                    <div class="city-image" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url('https://images.unsplash.com/photo-1569949380643-6e746ecaa3bd?w=800&q=80') center/cover;">
                         <div class="city-overlay">
                             <h3>St. Julian's</h3>
                             <p class="city-properties">650+ properties</p>
@@ -378,7 +369,7 @@
                     </div>
                 </div>
                 <div class="city-card" data-city="valletta">
-                    <div class="city-image" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url('https://images.unsplash.com/photo-1583939411023-24ce0304d450?w=800&q=80') center/cover;">
+                    <div class="city-image" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url('https://images.unsplash.com/photo-1534188753412-5df1a8b12de4?w=800&q=80') center/cover;">
                         <div class="city-overlay">
                             <h3>Valletta</h3>
                             <p class="city-properties">400+ properties</p>
@@ -387,7 +378,7 @@
                     </div>
                 </div>
                 <div class="city-card" data-city="gzira">
-                    <div class="city-image" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url('https://images.unsplash.com/photo-1549144511-f099e773c147?w=800&q=80') center/cover;">
+                    <div class="city-image" style="background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url('https://images.unsplash.com/photo-1562832135-14a35d25edef?w=800&q=80') center/cover;">
                         <div class="city-overlay">
                             <h3>Gzira</h3>
                             <p class="city-properties">550+ properties</p>
@@ -810,20 +801,13 @@
                     <div class="footer-logo">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="40" height="40" rx="10" fill="url(#footerLogoGradient)"/>
-                            <g opacity="0.3">
-                                <line x1="8" y1="30" x2="32" y2="30" stroke="white" stroke-width="1.5"/>
-                                <line x1="8" y1="26" x2="32" y2="26" stroke="white" stroke-width="1.5"/>
-                                <line x1="8" y1="22" x2="32" y2="22" stroke="white" stroke-width="1.5"/>
-                                <line x1="8" y1="18" x2="32" y2="18" stroke="white" stroke-width="1.5"/>
-                            </g>
-                            <text x="20" y="28" font-family="Inter, system-ui" font-size="20" font-weight="800"
-                                  text-anchor="middle" fill="white">5</text>
-                            <path d="M20 8L14 12.5V10H12V14L20 8L28 14V10H26V12.5L20 8Z" fill="white" opacity="0.9"/>
+                            <path d="M20 8L8 18V32C8 32.5304 8.21071 33.0391 8.58579 33.4142C8.96086 33.7893 9.46957 34 10 34H16V26C16 25.4696 16.2107 24.9609 16.5858 24.5858C16.9609 24.2107 17.4696 24 18 24H22C22.5304 24 23.0391 24.2107 23.4142 24.5858C23.7893 24.9609 24 25.4696 24 26V34H30C30.5304 34 31.0391 33.7893 31.4142 33.4142C31.7893 33.0391 32 32.5304 32 32V18L20 8Z" fill="white"/>
+                            <circle cx="20" cy="17" r="2" fill="#dc2626" opacity="0.9"/>
                             <defs>
                                 <linearGradient id="footerLogoGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0%" stop-color="#6366f1"/>
-                                    <stop offset="50%" stop-color="#7c3aed"/>
-                                    <stop offset="100%" stop-color="#8b5cf6"/>
+                                    <stop offset="0%" stop-color="#1e3a8a"/>
+                                    <stop offset="50%" stop-color="#475569"/>
+                                    <stop offset="100%" stop-color="#334155"/>
                                 </linearGradient>
                             </defs>
                         </svg>
