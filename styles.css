@@ -1222,21 +1222,58 @@ section {
     }
 
     .hero {
-        min-height: 600px;
-        padding: 60px 0 80px;
+        min-height: auto;
+        padding: 0;
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .hero .container {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .hero-background {
+        position: relative;
+        height: 45vh;
+        min-height: 350px;
+    }
+
+    .hero-overlay {
+        background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.1) 100%);
     }
 
     .hero-content {
-        padding: 8px 0;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        background: white;
+        min-height: auto;
     }
 
-    .hero-title {
-        font-size: 40px;
+    .FormBox {
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+        max-width: 100%;
+    }
+
+    .SegmentedWrapper {
+        padding: 16px;
+        border-bottom: 1px solid var(--border);
+        background: white;
+    }
+
+    .SegmentedContent {
+        padding: 20px 16px;
+    }
+
+    .HeroTitle {
+        font-size: 28px;
+        margin-bottom: 20px;
     }
 
     .hero-subtitle {
